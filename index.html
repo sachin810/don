@@ -9,7 +9,7 @@
   margin: auto;
   text-align: center;
   font-family: arial;
-  height:1000px;
+  height:100vh;
   overflow:auto;  
 }
 
@@ -41,22 +41,52 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+.button-p{
+position: absolute;
+left: 50%;
+transform: translateX(-50%); 
+bottom:5px;
+height:8%
+}
+.button{
+width:96%;
+height:100%;
+font-size:52px;
+}
+.margin{
+    margin:10px
+}
+.icon-box{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    bottom:200px;
+}
+.h1{
+ font-size: 80px;
+}
+.sub{
+     font-size: 60px;
+}
+.univ{
+     font-size: 40px;
+}
 </style>
 </head>
 <body>
 
 <div class="card">
   <img src="https://github.com/sachin810/don/blob/master/don.jpeg?raw=true" alt="Don" style="width:100%">
-  <h1>Dawn Vargese</h1>
-  <p class="title">CEO & Founder, ABC Corp</p>
-  <p>Thekedathamma University</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble fa-lg	"></i></a> 
-    <a href="#"><i class="fa fa-twitter fa-lg	"></i></a>  
-    <a href="#"><i class="fa fa-linkedin fa-lg	"></i></a>  
-    <a href="#"><i class="fa fa-facebook fa-lg	"></i></a> 
+  <h1 class="h1" >Dawn Varghese</h1>
+  <p class="title sub">CEO & Founder, ABC Corp</p>
+  <p class=" univ" >Thekedathamma University</p>
+  <div class="icon-box">
+    <a href="#"><i class="fa fa-dribbble fa-5x margin	"></i></a> 
+    <a href="#"><i class="fa fa-twitter fa-5x margin"></i></a>  
+    <a href="#"><i class="fa fa-linkedin fa-5x margin	"></i></a>  
+    <a href="#"><i class="fa fa-facebook fa-5x margin"></i></a> 
   </div>
-  <p><button>Contact</button></p>
+  <p class="button-p" style="width:100%;display:flex;justify-content:center;align-items:center"><button class="button" >Contact</button></p>
 </div>
 
 </body>
