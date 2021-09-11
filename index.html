@@ -2,93 +2,71 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
 <style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-/*   max-width: 300px; */
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  height:100vh;
-  overflow:auto;  
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
+.img-card{
+  height: 55%;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  width:100%;
   
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
 }
+.container-d{
+  height:100vh;
+}
+.img-class{
+  width:180px;
+  height:180px
 
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
 }
-
-button:hover, a:hover {
-  opacity: 0.7;
+.social-card{
+  width:40px;
+  height:40px;
+  background-color:white;
+  margin-right:15px;
+  border-radius:50%;
+  border:1px solid white;
 }
-.button-p{
-position: absolute;
-left: 50%;
-transform: translateX(-50%); 
-bottom:5px;
-height:8%
-}
-.button{
-width:96%;
-height:100%;
-font-size:52px;
-}
-.margin{
-    margin:10px
-}
-.icon-box{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); 
-    bottom:200px;
-}
-.h1{
- font-size: 80px;
-}
-.sub{
-     font-size: 60px;
-}
-.univ{
-     font-size: 40px;
+.social-img{
+  width:100%;
+  height:100%
 }
 </style>
-</head>
 <body>
 
-<div class="card">
-  <img src="https://github.com/sachin810/don/blob/master/don.jpeg?raw=true" alt="Don" style="width:100%">
-  <h1 class="h1" >Dawn Varghese</h1>
-  <p class="title sub">Marketing coordinator, Al Ahead Printing and Publishing</p>
-  <p class=" univ" >Thekedathamma University</p>
-  <p class=" univ" >+971 56 448 5947</p>
-  <div class="icon-box">
-    <img src="./facebook.png" style="width:90px;height:90px;margin-right:10px" />
-    <img src="./whatsapp.png" style="width:90px;height:90px;margin-right:10px" />
-    <img src="./twitter.png" style="width:90px;height:90px;margin-right:10px" />
-    <img src="./linkedin.png" style="width:90px;height:90px" />
-    
-  </div>
-  <p class="button-p" style="width:100%;display:flex;justify-content:center;align-items:center"><button class="button" >Contact</button></p>
+<div class="container-d">
+
+      <div  class="img-card d-flex justify-content-center align-items-center flex-column">
+          <div  style="position:fixed;bottom:42%" class="d-flex" >
+              <div class="social-card d-flex justify-content-center align-items-center" >
+                <img src="facebook.png" class="rounded-circle social-img" alt="Cinque Terre"  >
+              </div>
+              <div class="social-card d-flex justify-content-center align-items-center" >
+                 <img src="instagram.png" class="rounded-circle social-img" alt="Cinque Terre"  >
+              </div>
+              <div class="social-card d-flex justify-content-center align-items-center" >
+                 <img src="linkedin.png" class="rounded-circle social-img" alt="Cinque Terre"  >
+              </div>
+              <div class="social-card d-flex justify-content-center align-items-center" >
+                 <img src="twitter.png" class="rounded-circle social-img" alt="Cinque Terre"  >
+              </div>
+              <div class="social-card d-flex justify-content-center align-items-center" >
+                 <img src="whatsapp.png" class="rounded-circle social-img" alt="Cinque Terre"  >
+              </div>
+          </div>
+          <img src="don.png" class="rounded-circle img-class" alt="Cinque Terre"  >
+          <h1 class="font-weight-bold text-light mt-1 p-0 m-0" >Dawn Varghese</h1>
+          <p class="text-light mt-1 p-0" >Marketing Manager</p>
+
+      </div>
+      <div  style="height:45%;"  class="d-flex flex-column justify-content-between align-items-center">
+       <div >
+
+       </div>
+
+        <button style="width:95%;border-radius:19px;background-color:#d5a7d9;" class="btn  mb-2 text-light" >Save Contact</button>
+
+      </div>
 </div>
 
 </body>
